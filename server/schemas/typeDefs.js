@@ -6,7 +6,6 @@ type User {
     username: String
     email: String
     password: String
-    games: [Game]!
 }
 
 type Auth {
@@ -25,3 +24,4 @@ type Mutation {
     login(email: String!, password: String!): Auth
 }
 `
+module.exports = typeDefs;
