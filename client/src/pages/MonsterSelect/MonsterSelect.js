@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 // import { useQuery } from '@apollo/client';
 // import { GET_MONSTER } from '../../utils/queries';
 // import Auth from '../../utils/auth'
-import MonsterCard from '../../components/MonsterCard';
+import MonsterCard from '../../components/MonsterCard/MonsterCard';
 
 // 5e API graphQL URL: https://www.dnd5eapi.co/graphql
 // const queryURL = 'https://www.dnd5eapi.co/graphql';

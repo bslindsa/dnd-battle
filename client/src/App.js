@@ -11,7 +11,7 @@ import { setContext } from '@apollo/client/link/context';
 import Login from './pages/Login/Login';
 import Signup from './pages/Login/Signup';
 import MonsterSelect from './pages/MonsterSelect/MonsterSelect';
-// import Header from './components/Header/index';
+import Header from './components/Header/Header';
 // import Footer from './components/Footer/index';
 // import Home from './pages/Home/Home'
 // import Profile from './pages/Profile/Profile';
@@ -45,33 +45,30 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        {/* <Header /> */}
-        {/* <div> */}
-          {/* <div className="flex-column justify-center align-center min-100-vh bg-primary"> */}
-          <Switch>
-            <Route
-              path="/login"
-              component={Login}
-            />
-            <Route
-              path="/signup"
-              component={Signup}
-            />
-            <Route
-              path="/"
-              component={MonsterSelect}
-            />
-            {/* <Route
+        <Header />
+        <Switch>
+          <Route
+            path="/login"
+            component={Login}
+          />
+          <Route
+            path="/signup"
+            component={Signup}
+          />
+          <Route
+            path="/"
+            component={MonsterSelect}
+          />
+          {/* <Route
               path="/profile/:username"
               component={Profile}
             /> */}
-            {/* <Route
+          {/* <Route
               path="/"
               component={Home}
             /> */}
-          </Switch>
-          {/* <Footer/> */}
-        {/* </div> */}
+        </Switch>
+        {/* <Footer/> */}
       </Router>
     </ApolloProvider>
   );
